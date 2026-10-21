@@ -64,106 +64,186 @@
     <section class="section wrap" id="projects" aria-labelledby="projects-title">
       <h2 id="projects-title">Projects</h2>
 
-      <div class="project-group" aria-labelledby="personal-title">
-        <h3 id="personal-title" class="group-title">Personal projects</h3>
-        <p class="group-intro">Apps I'm building on my own to solve real problems at home, and to go deeper with Nuxt, React and AI.</p>
-
-        <article class="project">
-          <div class="project-head">
-            <h4>MathSprout</h4>
-            <p class="status status-progress">In progress</p>
-          </div>
-          <p class="project-summary">A math practice app I'm building for my 4th grader, who is working through Singapore Math and Math Olympiad prep. Problems are checked by code, not AI. The AI tutor only asks hint questions and explains, so a wrong answer is never marked right.</p>
-          <ul class="points">
-            <li>Fraction, multiplication and division engines with unit and property-based tests</li>
-            <li>AI tutor that guides with questions, plus photo-to-text for homework problems</li>
-            <li>Family accounts with parent PIN, secured by database row-level security</li>
-          </ul>
-          <p class="stack">Nuxt 4, Vue 3, TypeScript, Pinia, Vitest, Supabase, Claude API</p>
-          <p class="note">Live demo coming soon.</p>
-        </article>
-
-        <article class="project">
-          <div class="project-head">
-            <h4>DinnerPilot</h4>
-            <p class="status status-soon">Coming soon</p>
-          </div>
-          <p class="project-summary">An agent-driven meal planner that answers "what's for dinner?" for the whole family. It plans around what's already in the fridge, everyone's allergies and diets, and a weekly budget, then shows each step it took and waits for your approval before saving the plan.</p>
-          <p class="stack">Next.js, React, TypeScript, AI tool calling</p>
-        </article>
-      </div>
-
       <div class="project-group" aria-labelledby="professional-title">
         <h3 id="professional-title" class="group-title">Professional work</h3>
-        <p class="group-intro">At Ahold Delhaize USA (Peapod) I built the online grocery storefront used by The GIANT Company, Giant Food, Food Lion, Stop &amp; Shop and Hannaford shoppers across many U.S. states. The code and screens are proprietary, so these are written descriptions rather than demos.</p>
+        <p class="group-intro">Built at Ahold Delhaize USA (Peapod) for the online grocery storefront of The GIANT Company, Giant Food, Food Lion, Stop &amp; Shop and Hannaford, and earlier at Accenture. The code is proprietary, so these are descriptions rather than demos.</p>
+        <div class="cards">
+          <article class="card card-peapod">
+            <div class="card-head">
+              <h4>"Did You Forget?" personalization</h4>
+              <p class="client">Ahold Delhaize USA (Peapod)</p>
+            </div>
+            <p class="card-summary">Recommendations that help grocery shoppers remember items before they check out.</p>
+            <ul class="points">
+              <li>Built the "Did You Forget?" checkout page and modal</li>
+              <li>Built personalized product carousels across the storefront</li>
+            </ul>
+            <div class="more" id="more-did-you-forget">
+              <div class="more-inner">
+                <ul class="points">
+                  <li>Validated recommendations with the data science team before each release</li>
+                  <li>Designed to increase add-to-cart engagement and revenue</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="tags" aria-label="Technologies"><li>Vue 3</li><li>Nuxt</li><li>TypeScript</li><li>REST APIs</li></ul>
+            <button class="see-more" type="button" aria-expanded="false" aria-controls="more-did-you-forget"><span>See more</span></button>
+          </article>
+          <article class="card card-peapod">
+            <div class="card-head">
+              <h4>Product search and typeahead</h4>
+              <p class="client">Ahold Delhaize USA (Peapod)</p>
+            </div>
+            <p class="card-summary">Search used by more than 1 million shoppers on web and mobile.</p>
+            <ul class="points">
+              <li>Typeahead with recommended products, past searches and suggestions by user type</li>
+              <li>New search filters and categories (faceted search)</li>
+            </ul>
+            <div class="more" id="more-search">
+              <div class="more-inner">
+                <ul class="points">
+                  <li>Built for web and mobile, tested across browsers and on iOS with Xcode simulators</li>
+                  <li>Worked with performance engineers to keep search fast and responsive</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="tags" aria-label="Technologies"><li>Vue 3</li><li>TypeScript</li><li>SCSS</li><li>REST APIs</li></ul>
+            <button class="see-more" type="button" aria-expanded="false" aria-controls="more-search"><span>See more</span></button>
+          </article>
+          <article class="card card-peapod">
+            <div class="card-head">
+              <h4>Search A/B experiments</h4>
+              <p class="client">Ahold Delhaize USA (Peapod)</p>
+            </div>
+            <p class="card-summary">Optimizely experiments to find the best-converting search experience.</p>
+            <ul class="points">
+              <li>Built variants such as large image tiles and image search pills</li>
+              <li>Shipped experiments across web and mobile</li>
+            </ul>
+            <div class="more" id="more-ab-tests">
+              <div class="more-inner">
+                <ul class="points">
+                  <li>Compared variants on conversion to choose the winning search design</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="tags" aria-label="Technologies"><li>Vue 3</li><li>Optimizely</li></ul>
+            <button class="see-more" type="button" aria-expanded="false" aria-controls="more-ab-tests"><span>See more</span></button>
+          </article>
+          <article class="card card-peapod">
+            <div class="card-head">
+              <h4>Vue to Nuxt storefront migration</h4>
+              <p class="client">Ahold Delhaize USA (Peapod)</p>
+            </div>
+            <p class="card-summary">Helped move the production grocery storefront from Vue to Nuxt with TypeScript.</p>
+            <ul class="points">
+              <li>Contributed to the Nuxt and TypeScript migration</li>
+              <li>Built content-driven pages with Bloomreach headless CMS</li>
+            </ul>
+            <div class="more" id="more-nuxt-migration">
+              <div class="more-inner">
+                <ul class="points">
+                  <li>Shipped production releases through Azure DevOps pipelines</li>
+                  <li>Checked cross-browser and responsive quality before each release</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="tags" aria-label="Technologies"><li>Nuxt</li><li>Vue 3</li><li>TypeScript</li><li>Bloomreach CMS</li><li>Azure DevOps</li></ul>
+            <button class="see-more" type="button" aria-expanded="false" aria-controls="more-nuxt-migration"><span>See more</span></button>
+          </article>
+          <article class="card card-accenture">
+            <div class="card-head">
+              <h4>Broker portal features</h4>
+              <p class="client">Accenture, for BCBS / HCSC</p>
+            </div>
+            <p class="card-summary">JavaScript features for an internal insurance broker portal.</p>
+            <ul class="points">
+              <li>Built UI features with JavaScript, HTML and CSS</li>
+              <li>Integrated with REST services on a Java/J2EE and Spring stack</li>
+            </ul>
+            <div class="more" id="more-broker-portal">
+              <div class="more-inner">
+                <ul class="points">
+                  <li>Worked across the full SDLC, from requirements analysis through testing and production support</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="tags" aria-label="Technologies"><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Java/J2EE</li><li>Spring</li></ul>
+            <button class="see-more" type="button" aria-expanded="false" aria-controls="more-broker-portal"><span>See more</span></button>
+          </article>
+          <article class="card card-accenture">
+            <div class="card-head">
+              <h4>Nokia Lumia product content</h4>
+              <p class="client">Accenture, for Nokia / Microsoft</p>
+            </div>
+            <p class="card-summary">Product content for Nokia Lumia phones during a major company transition.</p>
+            <ul class="points">
+              <li>Managed product content for Nokia Lumia phones</li>
+              <li>Supported the content transition during Microsoft's acquisition of Nokia's devices business</li>
+            </ul>
+            <div class="more" id="more-nokia">
+              <div class="more-inner">
+                <ul class="points">
+                  <li>Joined Accenture client delivery teams after completing its Java MVC training program</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="tags" aria-label="Technologies"><li>Content management</li></ul>
+            <button class="see-more" type="button" aria-expanded="false" aria-controls="more-nokia"><span>See more</span></button>
+          </article>
+        </div>
+      </div>
 
-        <article class="project">
-          <div class="project-head">
-            <h4>"Did You Forget?" personalization</h4>
-            <p class="client">Ahold Delhaize USA (Peapod)</p>
-          </div>
-          <p class="project-summary">Personalized recommendations for online grocery shoppers, built to increase add-to-cart engagement and revenue.</p>
-          <ul class="points">
-            <li>Built the "Did You Forget?" checkout page and modal that suggests items a shopper may have missed</li>
-            <li>Built personalized product carousels across the storefront</li>
-            <li>Worked with the data science team to validate recommendations before release</li>
-          </ul>
-          <p class="stack">Vue 3, Nuxt, TypeScript, REST APIs</p>
-        </article>
-
-        <article class="project">
-          <div class="project-head">
-            <h4>Product search and typeahead</h4>
-            <p class="client">Ahold Delhaize USA (Peapod)</p>
-          </div>
-          <p class="project-summary">Search features used by more than 1 million shoppers to find groceries faster on web and mobile.</p>
-          <ul class="points">
-            <li>Typeahead dropdown with recommended products, past searches, and suggestions by user type</li>
-            <li>New search filters and categories (faceted search)</li>
-            <li>Responsive behavior tested across browsers and on iOS with Xcode simulators</li>
-          </ul>
-          <p class="stack">Vue 3, TypeScript, SCSS, REST APIs</p>
-        </article>
-
-        <article class="project">
-          <div class="project-head">
-            <h4>Search A/B experiments</h4>
-            <p class="client">Ahold Delhaize USA (Peapod)</p>
-          </div>
-          <p class="project-summary">Experiments run in Optimizely to find the best-converting search experience.</p>
-          <ul class="points">
-            <li>Built test variants such as large image tiles and image search pills</li>
-            <li>Shipped experiments across web and mobile with data-driven decisions on which variant won</li>
-          </ul>
-          <p class="stack">Vue 3, Optimizely</p>
-        </article>
-
-        <article class="project">
-          <div class="project-head">
-            <h4>Vue to Nuxt storefront migration</h4>
-            <p class="client">Ahold Delhaize USA (Peapod)</p>
-          </div>
-          <p class="project-summary">Helped move the production storefront from Vue to Nuxt with TypeScript.</p>
-          <ul class="points">
-            <li>Contributed to the Nuxt and TypeScript migration of a high-traffic grocery site</li>
-            <li>Built content-driven pages with Bloomreach headless CMS</li>
-            <li>Worked with performance engineers on page speed and responsiveness; shipped through Azure DevOps pipelines</li>
-          </ul>
-          <p class="stack">Nuxt, Vue 3, TypeScript, Bloomreach CMS, Azure DevOps</p>
-        </article>
-
-        <article class="project">
-          <div class="project-head">
-            <h4>Broker portal features</h4>
-            <p class="client">Accenture, for BCBS / HCSC</p>
-          </div>
-          <p class="project-summary">JavaScript features for an internal insurance broker portal.</p>
-          <ul class="points">
-            <li>Built UI features with JavaScript, HTML and CSS on a Java/J2EE and Spring stack</li>
-            <li>Integrated with REST services and worked across the full SDLC, from requirements to production support</li>
-          </ul>
-          <p class="stack">JavaScript, HTML, CSS, Java/J2EE, Spring, REST</p>
-        </article>
+      <div class="project-group" aria-labelledby="personal-title">
+        <h3 id="personal-title" class="group-title">Personal projects</h3>
+        <p class="group-intro">Apps I'm building to solve real problems at home, and to go deeper with Nuxt, React and AI.</p>
+        <div class="cards">
+          <article class="card card-now">
+            <div class="card-head">
+              <h4>MathSprout</h4>
+              <p class="status status-progress">In progress</p>
+            </div>
+            <p class="card-summary">A math practice app for my 4th grader. Code checks every answer; AI only gives hints.</p>
+            <ul class="points">
+              <li>Fraction, multiplication and division engines with unit and property-based tests</li>
+              <li>AI tutor that guides with questions instead of giving answers</li>
+            </ul>
+            <div class="more" id="more-mathsprout">
+              <div class="more-inner">
+                <ul class="points">
+                  <li>Photo-to-text for homework problems</li>
+                  <li>Family accounts with a parent PIN, secured by database row-level security</li>
+                  <li>Why this split: correct answers matter for a child, and AI can make arithmetic mistakes, so code decides what is right</li>
+                  <li>Live demo coming soon</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="tags" aria-label="Technologies"><li>Nuxt 4</li><li>Vue 3</li><li>TypeScript</li><li>Pinia</li><li>Vitest</li><li>Supabase</li><li>Claude API</li></ul>
+            <button class="see-more" type="button" aria-expanded="false" aria-controls="more-mathsprout"><span>See more</span></button>
+          </article>
+          <article class="card card-now">
+            <div class="card-head">
+              <h4>DinnerPilot</h4>
+              <p class="status status-soon">Coming soon</p>
+            </div>
+            <p class="card-summary">An AI agent that plans the week's dinners for the whole family.</p>
+            <ul class="points">
+              <li>Plans around what's already in the fridge and a weekly budget</li>
+              <li>Respects everyone's allergies and diets</li>
+            </ul>
+            <div class="more" id="more-dinnerpilot">
+              <div class="more-inner">
+                <ul class="points">
+                  <li>Shows each step it takes, such as "Checking pantry" and "Checking nut allergy"</li>
+                  <li>Waits for your approval before saving the plan</li>
+                  <li>Builds the grocery list for the week</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="tags" aria-label="Technologies"><li>Next.js</li><li>React</li><li>TypeScript</li><li>AI tool calling</li></ul>
+            <button class="see-more" type="button" aria-expanded="false" aria-controls="more-dinnerpilot"><span>See more</span></button>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -237,6 +317,18 @@
     fetch('resume.pdf', { method: 'HEAD' }).then(function (r) {
       if (!r.ok) document.querySelectorAll('[data-resume]').forEach(function (a) { a.hidden = true; });
     }).catch(function () {});
+  </script>
+  <script>
+    // "See more" toggles on project cards.
+    document.querySelectorAll('.see-more').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var open = btn.getAttribute('aria-expanded') === 'true';
+        var panel = document.getElementById(btn.getAttribute('aria-controls'));
+        btn.setAttribute('aria-expanded', String(!open));
+        panel.classList.toggle('is-open', !open);
+        btn.querySelector('span').textContent = open ? 'See more' : 'See less';
+      });
+    });
   </script>
 </body>
 </html>
