@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Priyadharshini Sadhasivam | Frontend Engineer</title>
+  <meta name="description" content="Frontend engineer building fast, accessible Vue and Nuxt apps. Chicago area. Open to full-time and contract roles.">
+  <meta property="og:title" content="Priyadharshini Sadhasivam | Frontend Engineer">
+  <meta property="og:description" content="Vue, Nuxt and TypeScript. Building web apps with AI where it helps and plain code where correctness matters.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="wordmark" href="#top">Priyadharshini Sadhasivam</a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="resume-link" href="resume.pdf" data-resume>Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <h1>Frontend engineer building fast, accessible Vue and Nuxt apps.</h1>
+      <p class="lede">I turn product ideas into interfaces that are clear to use and solid underneath. Based in the Chicago area and open to full-time and contract roles.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="resume.pdf" data-resume>Download resume</a>
+        <a class="btn" href="https://www.linkedin.com/in/priyadharshini-sadhasivam-85803664" rel="noopener">Connect on LinkedIn</a>
+      </div>
+
+      <figure class="bar-model" aria-labelledby="bar-caption">
+        <div class="bars" role="list">
+          <div class="bar bar-accenture" role="listitem" style="--w: 26">
+            <span class="bar-name">Accenture</span>
+            <span class="bar-years">2013–2015</span>
+          </div>
+          <div class="bar bar-peapod" role="listitem" style="--w: 38">
+            <span class="bar-name">Peapod Digital Labs</span>
+            <span class="bar-years">2022–2025</span>
+          </div>
+          <div class="bar bar-now" role="listitem" style="--w: 14">
+            <span class="bar-name">Now</span>
+            <span class="bar-years">Building with AI</span>
+          </div>
+        </div>
+        <div class="bracket" aria-hidden="true"></div>
+        <p class="bracket-label">5+ years shipping software</p>
+        <figcaption id="bar-caption">My career so far, drawn as a Singapore Math bar model, the same diagram my math app teaches.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section wrap" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>MathSprout</h3>
+          <p class="status status-progress">In progress</p>
+        </div>
+        <p class="project-summary">A math practice app I'm building for my 4th grader, who is working through Singapore Math and Math Olympiad prep. Problems are checked by code, not AI. The AI tutor only asks hint questions and explains, so a wrong answer is never marked right.</p>
+        <ul class="points">
+          <li>Fraction, multiplication and division engines with unit and property-based tests</li>
+          <li>AI tutor that guides with questions, plus photo-to-text for homework problems</li>
+          <li>Family accounts with parent PIN, secured by database row-level security</li>
+        </ul>
+        <p class="stack">Nuxt 4, Vue 3, TypeScript, Pinia, Vitest, Supabase, Claude API</p>
+        <p class="note">Live demo coming soon.</p>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>DinnerPilot</h3>
+          <p class="status status-soon">Coming soon</p>
+        </div>
+        <p class="project-summary">An agent-driven meal planner that answers "what's for dinner?" for the whole family. It plans around what's already in the fridge, everyone's allergies and diets, and a weekly budget, then shows each step it took and waits for your approval before saving the plan.</p>
+        <p class="stack">Next.js, React, TypeScript, AI tool calling</p>
+      </article>
+    </section>
+
+    <section class="section wrap" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a frontend engineer with a background in electrical engineering and Java development. Most recently I built Vue.js web apps as a contract engineer at Peapod Digital Labs in the Chicago area.</p>
+          <p>I care about the parts users feel: pages that load quickly, forms that work with a keyboard, and error messages that say what to do next. Lately I've been learning where AI genuinely helps in a product and where plain, tested code is the better choice. MathSprout is that idea in practice.</p>
+        </div>
+        <dl class="skills">
+          <div>
+            <dt>Frontend</dt>
+            <dd>Vue 3, Nuxt, TypeScript, JavaScript, HTML, CSS, Tailwind, Pinia, React</dd>
+          </div>
+          <div>
+            <dt>Quality</dt>
+            <dd>Vitest, unit and property-based testing, accessibility, responsive design</dd>
+          </div>
+          <div>
+            <dt>Backend and data</dt>
+            <dd>REST APIs, Supabase, PostgreSQL, Java, Spring</dd>
+          </div>
+          <div>
+            <dt>AI</dt>
+            <dd>Claude API, streaming responses, prompt design, AI coding tools</dd>
+          </div>
+        </dl>
+      </div>
+
+      <h3 class="sub">Experience</h3>
+      <ol class="timeline">
+        <li>
+          <span class="when">2022–2025</span>
+          <span class="what"><strong>Software Engineer (Contract)</strong>, Peapod Digital Labs, Chicago area</span>
+        </li>
+        <li>
+          <span class="when">2013–2015</span>
+          <span class="what"><strong>Associate Software Engineer</strong>, Accenture, India</span>
+        </li>
+        <li>
+          <span class="when">2009–2013</span>
+          <span class="what"><strong>B.E., Electrical and Electronics Engineering</strong>, Kumaraguru College of Technology</span>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section wrap contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>The quickest way to reach me is a message on LinkedIn. I reply within a day.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/priyadharshini-sadhasivam-85803664" rel="noopener">Message me on LinkedIn</a>
+        <a class="btn" href="https://github.com/webdesignl" rel="noopener">See my GitHub</a>
+        <a class="btn" href="resume.pdf" data-resume>Download resume</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Priyadharshini Sadhasivam. Built by hand with HTML and CSS.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Hide resume links until resume.pdf has been added to the site.
+    fetch('resume.pdf', { method: 'HEAD' }).then(function (r) {
+      if (!r.ok) document.querySelectorAll('[data-resume]').forEach(function (a) { a.hidden = true; });
+    }).catch(function () {});
+  </script>
+</body>
+</html>
