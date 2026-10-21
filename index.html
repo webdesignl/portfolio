@@ -6,7 +6,7 @@
   <title>Priyadharshini Sadhasivam | Frontend Engineer</title>
   <meta name="description" content="Frontend engineer building fast, accessible Vue and Nuxt apps. Chicago area. Open to full-time and contract roles.">
   <meta property="og:title" content="Priyadharshini Sadhasivam | Frontend Engineer">
-  <meta property="og:description" content="Vue, Nuxt and TypeScript. Building web apps with AI where it helps and plain code where correctness matters.">
+  <meta property="og:description" content="Vue, Nuxt and TypeScript. E-commerce personalization, search and A/B testing, plus apps built with AI.">
   <meta property="og:type" content="website">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +34,7 @@
   <main id="main">
     <section class="hero wrap" id="top">
       <h1>Frontend engineer building fast, accessible Vue and Nuxt apps.</h1>
-      <p class="lede">I turn product ideas into interfaces that are clear to use and solid underneath. Based in the Chicago area and open to full-time and contract roles.</p>
+      <p class="lede">I build e-commerce features that help people find and buy what they need. My product search work served more than 1 million grocery shoppers. Based in the Chicago area, authorized to work in the U.S., and open to full-time and contract roles.</p>
       <div class="actions">
         <a class="btn btn-primary" href="resume.pdf" data-resume>Download resume</a>
         <a class="btn" href="https://www.linkedin.com/in/priyadharshini-sadhasivam-85803664" rel="noopener">Connect on LinkedIn</a>
@@ -47,7 +47,7 @@
             <span class="bar-years">2013–2015</span>
           </div>
           <div class="bar bar-peapod" role="listitem" style="--w: 38">
-            <span class="bar-name">Peapod Digital Labs</span>
+            <span class="bar-name">Ahold Delhaize USA (Peapod)</span>
             <span class="bar-years">2022–2025</span>
           </div>
           <div class="bar bar-now" role="listitem" style="--w: 14">
@@ -56,7 +56,7 @@
           </div>
         </div>
         <div class="bracket" aria-hidden="true"></div>
-        <p class="bracket-label">5+ years shipping software</p>
+        <p class="bracket-label">5 years of software engineering</p>
         <figcaption id="bar-caption">My career so far, drawn as a Singapore Math bar model, the same diagram my math app teaches.</figcaption>
       </figure>
     </section>
@@ -64,54 +64,136 @@
     <section class="section wrap" id="projects" aria-labelledby="projects-title">
       <h2 id="projects-title">Projects</h2>
 
-      <article class="project">
-        <div class="project-head">
-          <h3>MathSprout</h3>
-          <p class="status status-progress">In progress</p>
-        </div>
-        <p class="project-summary">A math practice app I'm building for my 4th grader, who is working through Singapore Math and Math Olympiad prep. Problems are checked by code, not AI. The AI tutor only asks hint questions and explains, so a wrong answer is never marked right.</p>
-        <ul class="points">
-          <li>Fraction, multiplication and division engines with unit and property-based tests</li>
-          <li>AI tutor that guides with questions, plus photo-to-text for homework problems</li>
-          <li>Family accounts with parent PIN, secured by database row-level security</li>
-        </ul>
-        <p class="stack">Nuxt 4, Vue 3, TypeScript, Pinia, Vitest, Supabase, Claude API</p>
-        <p class="note">Live demo coming soon.</p>
-      </article>
+      <div class="project-group" aria-labelledby="personal-title">
+        <h3 id="personal-title" class="group-title">Personal projects</h3>
+        <p class="group-intro">Apps I'm building on my own to solve real problems at home, and to go deeper with Nuxt, React and AI.</p>
 
-      <article class="project">
-        <div class="project-head">
-          <h3>DinnerPilot</h3>
-          <p class="status status-soon">Coming soon</p>
-        </div>
-        <p class="project-summary">An agent-driven meal planner that answers "what's for dinner?" for the whole family. It plans around what's already in the fridge, everyone's allergies and diets, and a weekly budget, then shows each step it took and waits for your approval before saving the plan.</p>
-        <p class="stack">Next.js, React, TypeScript, AI tool calling</p>
-      </article>
+        <article class="project">
+          <div class="project-head">
+            <h4>MathSprout</h4>
+            <p class="status status-progress">In progress</p>
+          </div>
+          <p class="project-summary">A math practice app I'm building for my 4th grader, who is working through Singapore Math and Math Olympiad prep. Problems are checked by code, not AI. The AI tutor only asks hint questions and explains, so a wrong answer is never marked right.</p>
+          <ul class="points">
+            <li>Fraction, multiplication and division engines with unit and property-based tests</li>
+            <li>AI tutor that guides with questions, plus photo-to-text for homework problems</li>
+            <li>Family accounts with parent PIN, secured by database row-level security</li>
+          </ul>
+          <p class="stack">Nuxt 4, Vue 3, TypeScript, Pinia, Vitest, Supabase, Claude API</p>
+          <p class="note">Live demo coming soon.</p>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <h4>DinnerPilot</h4>
+            <p class="status status-soon">Coming soon</p>
+          </div>
+          <p class="project-summary">An agent-driven meal planner that answers "what's for dinner?" for the whole family. It plans around what's already in the fridge, everyone's allergies and diets, and a weekly budget, then shows each step it took and waits for your approval before saving the plan.</p>
+          <p class="stack">Next.js, React, TypeScript, AI tool calling</p>
+        </article>
+      </div>
+
+      <div class="project-group" aria-labelledby="professional-title">
+        <h3 id="professional-title" class="group-title">Professional work</h3>
+        <p class="group-intro">At Ahold Delhaize USA (Peapod) I built the online grocery storefront used by The GIANT Company, Giant Food, Food Lion, Stop &amp; Shop and Hannaford shoppers across many U.S. states. The code and screens are proprietary, so these are written descriptions rather than demos.</p>
+
+        <article class="project">
+          <div class="project-head">
+            <h4>"Did You Forget?" personalization</h4>
+            <p class="client">Ahold Delhaize USA (Peapod)</p>
+          </div>
+          <p class="project-summary">Personalized recommendations for online grocery shoppers, built to increase add-to-cart engagement and revenue.</p>
+          <ul class="points">
+            <li>Built the "Did You Forget?" checkout page and modal that suggests items a shopper may have missed</li>
+            <li>Built personalized product carousels across the storefront</li>
+            <li>Worked with the data science team to validate recommendations before release</li>
+          </ul>
+          <p class="stack">Vue 3, Nuxt, TypeScript, REST APIs</p>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <h4>Product search and typeahead</h4>
+            <p class="client">Ahold Delhaize USA (Peapod)</p>
+          </div>
+          <p class="project-summary">Search features used by more than 1 million shoppers to find groceries faster on web and mobile.</p>
+          <ul class="points">
+            <li>Typeahead dropdown with recommended products, past searches, and suggestions by user type</li>
+            <li>New search filters and categories (faceted search)</li>
+            <li>Responsive behavior tested across browsers and on iOS with Xcode simulators</li>
+          </ul>
+          <p class="stack">Vue 3, TypeScript, SCSS, REST APIs</p>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <h4>Search A/B experiments</h4>
+            <p class="client">Ahold Delhaize USA (Peapod)</p>
+          </div>
+          <p class="project-summary">Experiments run in Optimizely to find the best-converting search experience.</p>
+          <ul class="points">
+            <li>Built test variants such as large image tiles and image search pills</li>
+            <li>Shipped experiments across web and mobile with data-driven decisions on which variant won</li>
+          </ul>
+          <p class="stack">Vue 3, Optimizely</p>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <h4>Vue to Nuxt storefront migration</h4>
+            <p class="client">Ahold Delhaize USA (Peapod)</p>
+          </div>
+          <p class="project-summary">Helped move the production storefront from Vue to Nuxt with TypeScript.</p>
+          <ul class="points">
+            <li>Contributed to the Nuxt and TypeScript migration of a high-traffic grocery site</li>
+            <li>Built content-driven pages with Bloomreach headless CMS</li>
+            <li>Worked with performance engineers on page speed and responsiveness; shipped through Azure DevOps pipelines</li>
+          </ul>
+          <p class="stack">Nuxt, Vue 3, TypeScript, Bloomreach CMS, Azure DevOps</p>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <h4>Broker portal features</h4>
+            <p class="client">Accenture, for BCBS / HCSC</p>
+          </div>
+          <p class="project-summary">JavaScript features for an internal insurance broker portal.</p>
+          <ul class="points">
+            <li>Built UI features with JavaScript, HTML and CSS on a Java/J2EE and Spring stack</li>
+            <li>Integrated with REST services and worked across the full SDLC, from requirements to production support</li>
+          </ul>
+          <p class="stack">JavaScript, HTML, CSS, Java/J2EE, Spring, REST</p>
+        </article>
+      </div>
     </section>
 
     <section class="section wrap" id="about" aria-labelledby="about-title">
       <h2 id="about-title">About</h2>
       <div class="about-grid">
         <div class="about-text">
-          <p>I'm a frontend engineer with a background in electrical engineering and Java development. Most recently I built Vue.js web apps as a contract engineer at Peapod Digital Labs in the Chicago area.</p>
-          <p>I care about the parts users feel: pages that load quickly, forms that work with a keyboard, and error messages that say what to do next. Lately I've been learning where AI genuinely helps in a product and where plain, tested code is the better choice. MathSprout is that idea in practice.</p>
+          <p>I'm a frontend engineer with 5 years of software engineering experience. For 3 years I built grocery e-commerce at Ahold Delhaize USA (Peapod) for brands like Stop &amp; Shop, Food Lion, Giant Food, The GIANT Company and Hannaford: personalization, product search used by more than 1 million shoppers, and A/B tests in Vue 3, Nuxt and TypeScript. Before that I started my career at Accenture in Java and JavaScript.</p>
+          <p>I care about the parts users feel: pages that load quickly, forms that work with a keyboard, and error messages that say what to do next. I use AI tools like GitHub Copilot and Claude Code every day, and I'm learning where AI genuinely helps in a product and where plain, tested code is the better choice. MathSprout is that idea in practice.</p>
         </div>
         <dl class="skills">
           <div>
             <dt>Frontend</dt>
-            <dd>Vue 3, Nuxt, TypeScript, JavaScript, HTML, CSS, Tailwind, Pinia, React</dd>
+            <dd>Vue 3 (Composition API), Nuxt, Vuex, Pinia, React, TypeScript, JavaScript, HTML5, CSS3, SCSS, Tailwind</dd>
           </div>
           <div>
-            <dt>Quality</dt>
-            <dd>Vitest, unit and property-based testing, accessibility, responsive design</dd>
+            <dt>E-commerce and experiments</dt>
+            <dd>Personalization, product search, typeahead, faceted search, checkout, A/B testing with Optimizely</dd>
+          </div>
+          <div>
+            <dt>Quality and delivery</dt>
+            <dd>Jest, Vitest, accessibility (WCAG), responsive design, Git, CI/CD, Azure DevOps</dd>
           </div>
           <div>
             <dt>Backend and data</dt>
-            <dd>REST APIs, Supabase, PostgreSQL, Java, Spring</dd>
+            <dd>REST APIs, GraphQL, Bloomreach CMS, Supabase, Java/J2EE, Spring MVC, MySQL</dd>
           </div>
           <div>
             <dt>AI</dt>
-            <dd>Claude API, streaming responses, prompt design, AI coding tools</dd>
+            <dd>GitHub Copilot, Claude Code, Claude API, AI-assisted testing</dd>
           </div>
         </dl>
       </div>
@@ -120,22 +202,22 @@
       <ol class="timeline">
         <li>
           <span class="when">2022–2025</span>
-          <span class="what"><strong>Software Engineer (Contract)</strong>, Peapod Digital Labs, Chicago area</span>
+          <span class="what"><strong>Frontend Developer (Contract)</strong>, Ahold Delhaize USA (Peapod), Chicago area</span>
         </li>
         <li>
           <span class="when">2013–2015</span>
-          <span class="what"><strong>Associate Software Engineer</strong>, Accenture, India</span>
+          <span class="what"><strong>Associate Software Engineer</strong>, Accenture, Chennai, India</span>
         </li>
         <li>
           <span class="when">2009–2013</span>
-          <span class="what"><strong>B.E., Electrical and Electronics Engineering</strong>, Kumaraguru College of Technology</span>
+          <span class="what"><strong>B.E., Electrical and Electronics Engineering</strong>, Kumaraguru College of Technology, Coimbatore</span>
         </li>
       </ol>
     </section>
 
     <section class="section wrap contact" id="contact" aria-labelledby="contact-title">
       <h2 id="contact-title">Contact</h2>
-      <p>The quickest way to reach me is a message on LinkedIn. I reply within a day.</p>
+      <p>The quickest way to reach me is a message on LinkedIn. I'm authorized to work in the U.S. and available immediately.</p>
       <div class="actions">
         <a class="btn btn-primary" href="https://www.linkedin.com/in/priyadharshini-sadhasivam-85803664" rel="noopener">Message me on LinkedIn</a>
         <a class="btn" href="https://github.com/webdesignl" rel="noopener">See my GitHub</a>

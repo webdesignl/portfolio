@@ -230,15 +230,31 @@ a { color: inherit; }
   border-bottom: 1px solid var(--rule);
   max-width: 760px;
 }
-.project:first-of-type { padding-top: 0; }
+.project-group + .project-group { margin-top: 56px; }
+.group-title {
+  font-size: 1.45rem;
+  letter-spacing: -0.01em;
+  margin: 0 0 6px;
+}
+.group-intro {
+  color: var(--muted);
+  margin: 0 0 8px;
+  max-width: 62ch;
+}
+.client {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
 .project-head {
   display: flex;
   align-items: baseline;
   gap: 14px;
   flex-wrap: wrap;
 }
-.project h3 {
-  font-size: 1.5rem;
+.project h4 {
+  font-size: 1.35rem;
   margin: 0;
   letter-spacing: -0.01em;
 }
