@@ -404,6 +404,22 @@ a { color: inherit; }
 }
 .card .points li { margin-bottom: 6px; }
 
+.card-video { margin: 2px 0 14px; }
+.card-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: #064e3b;
+}
+.card-video figcaption {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
 /* Expanding panel */
 .more {
   display: grid;
