@@ -487,3 +487,7 @@ a { color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   .more, .more.is-open, .see-more::after { transition: none; }
 }
+
+/* Live demo and code links on a project card: wrap on phones, 44px tall like every button. */
+.card-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.75rem 0; }
+.card-actions .btn { min-height: 44px; }
